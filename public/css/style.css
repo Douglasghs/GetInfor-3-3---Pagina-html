@@ -1,0 +1,33 @@
+body{
+    background-color: #0000;
+}
+
+#Geral{
+    position: fixed;
+    width: 97.5vw;
+    height: 100vh;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#geralLabels{
+    position: relative;
+    width: 24vw;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: 3vw;
+}
+
+
+.labels{
+    position: relative;
+    width: 20vw;
+    height: 7vh;
+    border: 1px solid red;
+    margin-top: 5vh;
+    margin-left: 3vw;
+
+    font-size: 100%;
+    text-align: center;
+    color: white;
+}
