@@ -10,10 +10,11 @@ body{
     border-radius: 5px;
 }
 
-#geralLabels{
+.SubGeralDIVS{
     position: relative;
-    width: 24vw;
-    height: 80vh;
+    float: left;
+    width: 29%;
+    height: 80%;
     margin-top: 10vh;
     margin-left: 3vw;
 }
@@ -26,8 +27,34 @@ body{
     border: 1px solid red;
     margin-top: 5vh;
     margin-left: 3vw;
+    border-radius: 5px;
+
+    font-size: 200%;
+    text-align: center;
+    color: white;
+}
+
+.inputs{
+    position: relative;
+    width: 27.8vw;
+    height: 7vh;
+    margin-top: 4.5vh;
+    border-radius: 5px;
 
     font-size: 100%;
     text-align: center;
-    color: white;
+    color: #000;
+}
+
+#BtnPesquisar{
+    width: 60%;
+    height: 50%;
+    margin-top: 25%;
+    margin-left: 20%;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px darkgray;
+
+    font-size: 200%;
+    color: #000;
 }

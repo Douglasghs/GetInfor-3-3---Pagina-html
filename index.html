@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,33 @@
 
     <title>GetInfor</title>
 </head>
-<body>
-    
-    <div id="Geral">
-       <div id="geralLabels">
-        <div class="labels"><strong>IPV4:</strong></div>
-        <div class="labels"><strong>IPV6:</strong></div>
-        <div class="labels"><strong>Username:</strong></div>
-        <div class="labels"><strong>HostName:</strong></div>
-        <div class="labels"><strong>MemoryRAM:</strong></div>
-       </div>
-    </div>
 
+<body>
+
+    <div id="Geral">
+        <div class="SubGeralDIVS">
+            <div class="labels"><strong>IPV4:</strong></div>
+            <div class="labels"><strong>IPV6:</strong></div>
+            <div class="labels"><strong>Username:</strong></div>
+            <div class="labels"><strong>HostName:</strong></div>
+            <div class="labels"><strong>MemoryRAM:</strong></div>
+        </div>
+        <div class="SubGeralDIVS">
+            <input type="text" class="inputs" id="InputIPV4" placeholder="Digite o IPV4 para fazer a busca...">
+            <input type="text" class="inputs" id="InputIPV6" placeholder="Digite o IPV6 para fazer a busca...">
+            <input type="text" class="inputs" id="InputUserName" placeholder="UserName..." readonly="false">
+            <input type="text" class="inputs" id="InputHostName" placeholder="HostName..." readonly="false">
+            <input type="text" class="inputs" id="InputMemoryRAM" placeholder="MemoryRAM..." readonly="false">
+        </div>
+        <div class="SubGeralDIVS">
+            <button type="submit" id="BtnPesquisar" onclick="Pesquisar(
+                window.document.getElementById('InputIPV4').value,
+                window.document.getElementById('InputIPV6').value
+            )"><strong>PESQUISAR</strong></button>
+        </div>
+    </div>
+    
     <script src="./public/js/script.js"></script>
 </body>
+
 </html>
